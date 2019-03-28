@@ -1,8 +1,9 @@
 # com.iec.trabalhoFinal.homeBroker
 Trabalho final da disciplina Arquitetura com JavaEE - Curso: Arquitetura de sistemas distribuidos, oferta 10 
 
-** Instruções para execução **
+<h3> Instruções para execução </h3>
 
+<p>
 O trabalho foi desenvolvido utilizando a máquina virtual disponibilizada pelo professor em sala de aula. Desta forma, 
 as versões do MongoDb e RabbitMQ utilizadas para testes são as mesmas disponibilizadas na máquina virtual.
 
@@ -22,14 +23,17 @@ Foram utilizadas as bibliotecas listadas abaixo para implementação do sistema:
 * Lombok
 * Swagger
 * javax.Mail
+</p>
 
-Configurações de Email
+<h3>Configurações de Email</h3>
 
+<p>
 Para envio de email, o e-mail que irá ser utilizado para envio e sua senha deverão ser configurados no arquivo: application.properties
 nos campos: emailFrom e emailPassword
+</p>
 
-Funcionalidades
-
+<h3>Funcionalidades</h3>
+<p>
 O sistema controla a compra e venda de ações por acionistas. Por se tratar de um modelo conceitual, as ações que podem ser executadas
 foram mantidas da forma mais simples possível.
 
@@ -42,29 +46,30 @@ Uma empresa pode disponibilizar mais ações no mercado, porem não pode retirar
 Para um primeiro uso do sistema, já é disponibilizado uma empresa cadastrada com 5 ações a venda e um acionista cadastrado,
 descritos abaixo:
 
-* Empresa
-id: 123456789
-name: AWS
-ativo: true
+* Empresa <br>
+id: 123456789<br>
+name: AWS<br>
+ativo: true<br>
 
-* Acionista
-id: gerado automaticamente
-name: Exemplo
-ativo: true
-email: emailExample@mail.com
+* Acionista<br>
+id: gerado automaticamente<br>
+name: Exemplo<br>
+ativo: true<br>
+email: emailExample@mail.com<br>
+</p>
 
-Controllers
-
+<h3>Controllers</h3>
+<p>
 Em cada um dos controllers existem funções basicas de CRUD. As demais serão descritas neste documento:
 
-** Empresa controller **
-Apenas funções de CRUD
+## Empresa controller <br>
+Apenas funções de CRUD<br>
 
-** Acionista controller **
-Apenas funcções de CRUD
+## Acionista controller <br>
+Apenas funcções de CRUD<br>
 
-** Acao controller **
-As funções de CRUD básico não serão descritas neste documento.
+## Acao controller <br>
+As funções de CRUD básico não serão descritas neste documento.<br>
 
 * GET: /api/v1/acoes/acionista/{acionistaId} Lista todas as ações pertencentes ao acionista, a venda ou não
 * GET: /api/v1/acoes/empresa/{empresaId} Lista todas as ações de uma empresa, independente do acionista proprietario e se esta a venda ou nao
